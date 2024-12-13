@@ -43,3 +43,14 @@ class Labrador extends Dog {
   }
 }
 // 3-markAsUntransferable=====
+class Animal {
+  constructor(name, type) {
+    this.name = name;
+    this.type = type;
+  }
+  toString() {
+    console.log(`${name} is ${this.type}`);
+  }
+}
+const Dog = new Animal("max", "dog");
+console.log(dog.name);
